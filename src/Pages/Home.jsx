@@ -1,7 +1,8 @@
 import React from "react";
-import Slider from './Slider';
-import Card from './Card';
-import Body from './Body';
+import Slider from '../Slider';
+import Card from '../Card';
+import Body from '../Body';
+import Ourservices from '../Ourservices'
 
 
 
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
 
       <Body/>
+      <div className="ourservicescls">
+        <Ourservices/>
+      </div>
     </>
   );
 };
