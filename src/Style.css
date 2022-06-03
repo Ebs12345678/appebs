@@ -25,7 +25,7 @@
 .navbtn{font-weight: 600;padding-left: 25px;
     padding-right: 25px;}
 
-.card-section {
+/* .card-section {
     
     margin-bottom: 50px;
     background-color: #f1f1f1;
@@ -53,7 +53,25 @@
 .cardbody p{text-align: justify; padding-left: 10px;padding-right: 10px;}
 .cardbtn {text-align: center;padding-bottom: 15px}
 
-.card-title{text-align: center;}
+.card-title{text-align: center;} */
+
+/* Home page Financial & Corporate Solutions Section */
+.fn-bsn-sec{margin-top: 5rem;}
+.fn-cor-bg-sec{background-image: radial-gradient(circle at right center, #dbcbc8 0%,#dadde0 100%);}
+
+.lft-img >img{width: 100%;position: relative;display: block;margin-left: auto;}
+.fn-cor-bg-img {
+    display: block;
+    margin-left: auto;   
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.lft-cnt > h4{text-align: center;font-weight: 600;font-size: 2rem;margin-top: 4rem;}
+.fcn-cor-btn{margin-top: 3rem;margin-left: 3rem;}
+
+
+
 .bimgc{width: 500px; height: 300px;}
 
 

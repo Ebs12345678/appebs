@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from '../Slider';
-import Card from '../Card';
+import {Homecontent} from '../Content/Homecontent'
 import Body from '../Body';
 import Ourservices from '../Ourservices'
 
@@ -14,13 +14,13 @@ const Home = () => {
       </div>
       <div className="main-card">
         
-      <Card />
+      <Homecontent />
       </div>
 
       <Body/>
-      <div className="ourservicescls">
+      {/* <div className="ourservicescls">
         <Ourservices/>
-      </div>
+      </div> */}
     </>
   );
 };
