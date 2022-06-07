@@ -2,6 +2,8 @@ import React from 'react';
 import img2 from '../images/Finacial-and-Corporate-Services.jpg';
 import img3 from '../images/Digital-Marketing.jpg';
 import { Link } from 'react-router-dom';
+import Homecontentdata from './Homecontentdata';
+
 
 export const Homecontent = () => {
     return (
@@ -17,11 +19,9 @@ export const Homecontent = () => {
                     <div className='lft-cnt'>
                         <h4 className='fn-cor-tlt'>Financial & Corporate Solutions</h4>
                         <p className='fn-cor-txt'>
-                            <level>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially unchanged.</level>
+                            <level>
+                                {Homecontentdata.fincorpsol}
+                            </level>
                         </p>
                     </div>
 
@@ -40,11 +40,9 @@ export const Homecontent = () => {
                     <div className='lft-cnt'>
                         <h4 className='fn-cor-tlt'>Website Development</h4>
                         <p className='fn-cor-txt'>
-                            <level>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially unchanged.</level>
+                            <level>
+                                {Homecontentdata.webdev}
+                            </level>
                         </p>
                     </div>
 
@@ -73,11 +71,9 @@ export const Homecontent = () => {
                     <div className='lft-cnt'>
                         <h4 className='fn-cor-tlt'>Digital Marketing</h4>
                         <p className='fn-cor-txt'>
-                            <level>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially unchanged.</level>
+                            <level>
+                                {Homecontentdata.dm}
+                            </level>
                         </p>
                     </div>
 
