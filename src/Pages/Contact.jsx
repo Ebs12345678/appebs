@@ -2,14 +2,22 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const Contact = () => {
-
-    const [formvalue, setFormvalue] = useState({ name: "", email: "", url: "", message: "" });
+    const [formvalue, setFormvalue] = useState({ name: "", email: "", url: "", mobile: "", message: "" });
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [formerror, setFormerror] = useState({});
 
     const handleValidation = (e) => {
         const { name, value } = e.target;
         setFormvalue({ ...formvalue, [name]: value });
+        if(name === "name"){
+                setFormerror({ ...formerror, name: "" });
+        }
+        if(name === "email"){
+            setFormerror({ ...formerror, email: "" });
+        }
+        if(name === "mobile"){
+            setFormerror({ ...formerror, mobile: "" });
+        }      
     }
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,8 +25,11 @@ const Contact = () => {
         setIsSubmitted(true);
     }
     const validationform = (formvalue) => {
-        const error = {};
+        const error = {};        
+        
         const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const mobilePattern =  /^(\+\d{1,3}[- ]?)?\d{10}$/;
+
         if (formvalue.name === "") {
             error.name = "Name is required";
         }
@@ -28,11 +39,11 @@ const Contact = () => {
         else if (!emailPattern.test(formvalue.email)) {
             error.email = "Email is not valid";
         }
-        if (formvalue.url === "") {
-            error.url = "Url is required";
+        if (formvalue.mobile === "") {
+            error.mobile = "Mobile is required";
         }
-        if (formvalue.message === "") {
-            error.message = "Message is required";
+        else if(!mobilePattern.test(formvalue.mobile)){
+            error.mobile = "Mobile is not valid";
         }
         return error;
     }
@@ -62,7 +73,6 @@ const Contact = () => {
                                         type="text"
                                         className="form-control"
                                         name="name"
-                                        placeholder="Name"
                                         value={formvalue.name}
                                         onChange={handleValidation}
                                     />
@@ -77,7 +87,6 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         name="email"
-                                        placeholder="email"
                                         className="form-control"
                                         value={formvalue.email}
                                         onChange={handleValidation}
@@ -86,32 +95,29 @@ const Contact = () => {
                                 </div>
                                 <div className="mb-3">
                                     <label for="exampleFormControlInput1" className="form-label">
-                                        Tel.
+                                        Mobile
                                     </label>
-
                                     <input
                                         type="text"
-                                        name="tel"
-                                        placeholder="telephone no."
                                         className="form-control"
-                                        value={formvalue.tel}
+                                        name="mobile"
+                                        value={formvalue.mobile}
                                         onChange={handleValidation}
                                     />
-                                    <span className="text-danger">{formerror.tel}</span>
+                                    <span className="text-danger">{formerror.mobile}</span>
                                 </div>
                                 <div className="mb-3">
                                     <label for="exampleFormControlInput1" className="form-label">
-                                        Website 
+                                        Website
                                     </label>
                                     <input
                                         type="text"
                                         className="form-control"
                                         name="url"
-                                        placeholder="website"
                                         value={formvalue.url}
                                         onChange={handleValidation}
                                     />
-                                    <span className="text-danger">{formerror.url}</span>
+                                    
                                 </div>
                                 <div className="mb-3">
                                     <label for="exampleFormControlTextarea1" className="form-label">
@@ -120,12 +126,11 @@ const Contact = () => {
                                     <textarea
                                         className="form-control"
                                         name="message"
-                                        placeholder="message"
                                         value={formvalue.message}
                                         onChange={handleValidation}
                                         rows="3"
                                     ></textarea>
-                                    <span className="text-danger">{formerror.message}</span>
+                                    
                                 </div>
                                 <button type="submit" className="btn-success" name="button">Submit</button>
                             </form>
@@ -138,5 +143,4 @@ const Contact = () => {
         </>
     );
 };
-
 export default Contact;
