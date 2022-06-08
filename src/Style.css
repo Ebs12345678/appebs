@@ -380,3 +380,114 @@ p.ftrsndtxt.ftrtrdclm {
 
 .ftr-adrs{background-color: #a32701; color: #fff;margin: 0rem 1rem 0rem 0rem;}
 button.btn.btn-link.ftr-adrs:hover{color: #fff !important; text-decoration: none;}
+
+/* Contact page Section*/
+.cnt-hd-img{
+    background-image: none;
+    text-transform: uppercase;
+    padding:3rem 0rem 3rem 0rem;  
+    text-align: center; 
+}
+
+.cnt-hd-img > a{color: #fff; font-weight: 600; font-size: 3rem;}
+.navbar-brand{
+    text-align: center !important;
+}
+.cnt-hd-blk{background-image: url(./images/web\ footer11.jpg);}
+.cnt-hd-img > a:hover{color:#fff;}
+.cnt-body-blk{
+    padding:5rem 0rem 5rem 0rem; 
+}
+.cnt-map-blk{
+    background-image:url(./images/ebsmap.PNG) ;
+}
+
+/* Solution page Section*/
+.cnt-blk{
+    padding-left: 20px;
+}
+.card-blk{
+    height: 300px;
+    width: 300px;
+    background-color:rgb(117, 76, 121);
+    padding: 30px;
+    margin: 20px;
+    color:#fff;
+    border-radius: 1rem;
+    box-shadow: 5px 10px #888888;
+
+}
+.card-icon{
+    height:60px;
+    width: 60px;
+    
+}
+/* solution Card*/
+img.card-img {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #022126;
+    border: 10px solid #ffffff;
+    border-radius: 100px;
+}
+.card-sol {
+    background-color: #c3f5dc;
+    box-shadow: 1px 1px 5px 2px rgb(107 93 93 / 78%);
+    margin-bottom: 25px;
+    border-radius: 5%;
+}
+.sec-sol-1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+
+.solbtn{
+    margin-bottom: 10px;
+}
+.sol-img-blk{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* solution sublinks */
+
+.side-bar{
+    margin-top: 3rem;
+    padding-left: 2rem;
+    text-align: center;
+   
+}
+.sol-sub-body{
+margin-top: 3rem;
+padding-right: 3rem;
+text-align: center;
+text-align: justify;
+
+}
+/* quick link*/
+.qk-list{
+    background-color: rgb(163, 161, 161);
+    padding: 5px;
+}
+.qk-list-li{
+    text-align: right;
+    font-weight: bold;
+    list-style: none;
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+}
+.link-img{
+    margin-right: 100%;
+    height: 70px;
+    width: 70px;
+}
+

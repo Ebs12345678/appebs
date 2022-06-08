@@ -3,6 +3,7 @@ import img2 from '../images/Finacial-and-Corporate-Services.jpg';
 import img3 from '../images/Digital-Marketing.jpg';
 import { Link } from 'react-router-dom';
 import Homecontentdata from './Homecontentdata';
+
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 export const Homecontent = () => {
@@ -20,6 +21,7 @@ export const Homecontent = () => {
                         <h4 className='fn-cor-tlt'>Financial & Corporate Solutions</h4>
                         <p className='fn-cor-txt'>
                             <level>
+
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type
@@ -44,6 +46,10 @@ export const Homecontent = () => {
                             {/* <level>
                                 {Homecontentdata.fincorpsol}
                             </level> */}
+
+                                {Homecontentdata.fincorpsol}
+                            </level>
+
                         </p>
                     </div>
 
@@ -62,6 +68,7 @@ export const Homecontent = () => {
                     <div className='lft-cnt'>
                         <h4 className='fn-cor-tlt'>Website Development</h4>
                         <p className='fn-cor-txt'>
+
 
                         <level>
                         A good representation of the business helps it grow easily. 
@@ -87,6 +94,11 @@ export const Homecontent = () => {
                             {/* <level>
                                 {Homecontentdata.webdev}
                             </level> */}
+
+                            <level>
+                                {Homecontentdata.webdev}
+                            </level>
+
                         </p>
                     </div>
 
@@ -114,7 +126,7 @@ export const Homecontent = () => {
 
                     <div className='lft-cnt'>
                         <h4 className='fn-cor-tlt'>Digital Marketing</h4>
-                        <p className='fn-cor-txt'>
+                       <p className='fn-cor-txt'>
                         <level>
                         We connect your business to potential customers with the right 
                         Digital Marketing tools. Promote the business… 
@@ -140,6 +152,10 @@ export const Homecontent = () => {
                             {/* <level>
                                 {Homecontentdata.dm}
                             </level> */}
+
+                            <level>
+                                {Homecontentdata.dm}
+                            </level>
                         </p>
                     </div>
 
