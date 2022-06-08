@@ -65,7 +65,7 @@ const Footerf = () => {
                                         return (
                                             <button
                                                 type="button"
-                                                class="btn btn-link"
+                                                class="btn btn-link ftr-adrs"
                                                 onClick={publish}
                                                 value={val.id}>
                                                 {val.id}
@@ -74,8 +74,8 @@ const Footerf = () => {
                                     })
                                 }
                             </div>
-                            <h5>{ctitle}</h5>
-                            <p>{cdetails}</p>
+                            <h5 className="ftr-adrs-tlt">{ctitle}</h5>
+                            <p className="ftr-adrs-txt">{cdetails}</p>
                         </div>
 
                     </div>

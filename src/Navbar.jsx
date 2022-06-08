@@ -35,10 +35,10 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" to="/solutions">Solutions</a>
+                                <Link className="nav-link" to="/solutions">Solutions</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" to="/contact">Contact us</a>
+                                <Link className="nav-link" to="/contact">Contact us</Link>
                             </li>
                         </ul>
                         <div className="btn btn-danger ml-auto navbtn">GET QUOTE</div>

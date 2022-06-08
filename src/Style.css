@@ -55,7 +55,38 @@
 
 .card-title{text-align: center;} */
 
+/* Home Page Why Choose us section */
+.hm-chos-blk{margin-top: 3rem;}
+
+.hm-chos-tlt{font-weight: 600;font-size: 2.6rem;text-align: center;}
+
+.hm-chos-subtxt {
+    font-size: 1.9rem; 
+    color: red;
+    font-weight: 600;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    
+}
+.hm-chos-txt{text-align: center;margin-top: 1rem;}
+.hmchosusimg{height: 400px;display: block;margin-left: auto;}
+
+.col-md-6.hmchosusimgblk {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-md-6.hmchosusimgblk img {
+    /* width: 500px; */
+    max-width: 100%;
+}
+
+
+
 /* Home page Financial & Corporate Solutions Section */
+
 .fn-bsn-sec{margin-top: 5rem;}
 .fn-cor-bg-sec{background-image: radial-gradient(circle at right center, #dbcbc8 0%,#dadde0 100%);}
 
@@ -67,10 +98,30 @@
     padding-left: 0px !important;
 }
 
-.lft-cnt > h4{text-align: center;font-weight: 600;font-size: 2rem;margin-top: 4rem;}
-.fcn-cor-btn{margin-top: 3rem;margin-left: 3rem;}
+.lft-cnt > h4{text-align: center;font-weight: 600;font-size: 2rem;margin-top: 1.3rem;}
+.fcn-cor-btn{margin-top: 0.3rem;margin-left: 3rem;}
 
+.fnc-cor-hm-blk {
+    display: flex;
+}
 
+.fnr-cor-ul-cls-blk2 {
+    display: block;
+    margin-left: auto;
+    margin-right: 0.6rem;
+}
+.fnr-cor-li-cls{list-style: none;}
+span.fnc-cor-hm-arw-icn {
+    margin-right: 0.5rem;
+}
+.lft-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Home page offer section */
+.off-hm{margin-top: 4rem;}
 
 .bimgc{width: 500px; height: 300px;}
 
@@ -125,17 +176,36 @@
 .btncls{margin-top: 20PX;margin-bottom: 20PX;}
 .btnin{font-weight: 600;font-size: 16px;}
 
+/* Box Service Section */
+img.expert-img {
+    width: 25%;
+}
+.fst-sec {
+    border-right: 1px solid #d3c8c8;
+    /* margin-top: 1rem; */
+    display: flex;
+}
+.expertcnt {
+    padding-left: 1rem;
+}
+.boxservices {
+    background: #f1f1f1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 /* Footer CSS */
 .footersection{margin-top: 20px; padding-top: 50px;background: #d5d5d5;
-background-image: url(./images/backgroudn.webp);background-repeat: no-repeat;
+background-image: url(./images/ebsfooter.jpg);background-repeat: no-repeat;
 background-size: cover;border-top: 1px solid #f7f7f700;}
-.ftrcol1txt{padding-top: 20px;padding-bottom: 10px;}
-.ftrulcls{list-style: none; padding-left: 0px !important;}
+.ftrcol1txt{padding-top: 20px;padding-bottom: 10px;color: #fff !important;}
+.ftrulcls{list-style: none; padding-left: 0px !important;margin-top: 1rem;}
 .ftrlicls{text-decoration: none;padding-top: 5px;padding-bottom: 5px; }
-.ftrlicls a {color: #000;}
+.ftrlicls a {color: #fff;}
+.ftr-adrs-tlt{color: #fff;}
+.ftr-adrs-txt{color: #fff;}
 .socialtlt{ font-size: 20px;font-weight: 600;padding-top: 30px;
 padding-bottom: 15px;}
-.serftrtxt {text-align: center !important;font-size: 20px;font-weight: 600;}
+.serftrtxt {text-align: center !important;font-size: 20px;font-weight: 600;color: #fff;}
 .adrhd{font-size: 15px; font-weight: 500;color: #01107c;}
 .firadr{font-weight: 500;}
 .ftrcpright{background: #000; color: #fff;height: 50px;line-height: 3; text-align: center;}
@@ -170,7 +240,7 @@ p.ftrsndtxt.ftrtrdclm {
     padding-top: 37px;
 }
 
-.adrsec{display: flex;}
+.adrsec{display: flex;margin-top: 1rem;}
 .usaclsp{display: none;}
 .ukclsp{display: none;}
 
@@ -304,3 +374,9 @@ p.ftrsndtxt.ftrtrdclm {
 /* Our Services Section */
 .ourservicesout{padding-top: 30px; padding-bottom: 30px;}
 .ourserviceshead{text-align: center;padding-bottom: 50px; font-weight: 700; font-size: 2.6rem;}
+
+
+/* Footer Address Section */
+
+.ftr-adrs{background-color: #a32701; color: #fff;margin: 0rem 1rem 0rem 0rem;}
+button.btn.btn-link.ftr-adrs:hover{color: #fff !important; text-decoration: none;}
