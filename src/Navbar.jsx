@@ -34,6 +34,10 @@ const Navbar = () => {
                                 </div>
                             </li>
 
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/solutions">Solutions</Link>
+
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="/solutions" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</Link>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -46,6 +50,7 @@ const Navbar = () => {
                                     <Link className="dropdown-item" to="/solutions/vat-consultancy">VAT CONSULTANCY SERVICES</Link>
                                     <Link className="dropdown-item" to="/solutions/liquidation">LIQUIDATION OF COMPANY</Link>
                                 </div>
+
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Contact us</Link>
